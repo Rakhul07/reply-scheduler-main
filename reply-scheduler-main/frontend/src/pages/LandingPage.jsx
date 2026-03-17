@@ -15,7 +15,7 @@ export default function LandingPage() {
                     <span className="font-bold text-lg tracking-tight">QA Automation Team</span>
                 </div>
                 <div>
-                    <Link to="/tools/replay-scheduler" className="text-sm font-semibold text-violet-600 hover:text-violet-700 transition-colors">
+                    <Link to="/scheduler" className="text-sm font-semibold text-violet-600 hover:text-violet-700 transition-colors">
                         Go to App &rarr;
                     </Link>
                 </div>
@@ -35,7 +35,7 @@ export default function LandingPage() {
                         We build high-performance automation tools for QA Engineering. Stop waiting in line and start prioritizing your critical tests with our centralized queue manager.
                     </p>
                     <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <Link to="/tools/replay-scheduler" className="px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-semibold rounded-2xl shadow-xl shadow-violet-500/25 hover:shadow-violet-500/40 hover:-translate-y-0.5 transition-all duration-300">
+                        <Link to="/scheduler" className="px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-semibold rounded-2xl shadow-xl shadow-violet-500/25 hover:shadow-violet-500/40 hover:-translate-y-0.5 transition-all duration-300">
                             Launch Match Replay Scheduler
                         </Link>
                         <a href="#what-we-do" className="px-8 py-4 bg-white text-slate-700 font-semibold rounded-2xl shadow-sm border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all duration-300">
@@ -127,7 +127,7 @@ export default function LandingPage() {
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-slate-400 text-sm">
                     <p>&copy; {new Date().getFullYear()} QA Automation Team. All rights reserved.</p>
                     <div className="mt-4 md:mt-0 flex gap-6">
-                        <Link to="/tools/replay-scheduler" className="hover:text-slate-600 transition-colors">Scheduler Tool</Link>
+                        <Link to="/scheduler" className="hover:text-slate-600 transition-colors">Scheduler Tool</Link>
                     </div>
                 </div>
             </footer>

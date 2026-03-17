@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import ReplayForm from "./components/ReplayForm";
 import LandingPage from "./pages/LandingPage";
@@ -116,7 +116,7 @@ function ReplaySchedulerPage() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Toaster
         position="top-right"
         toastOptions={{
@@ -138,9 +138,9 @@ export default function App() {
       />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/tools/replay-scheduler" element={<ReplaySchedulerPage />} />
+        <Route path="/scheduler" element={<ReplaySchedulerPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
